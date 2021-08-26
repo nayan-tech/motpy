@@ -16,6 +16,11 @@ class ModelPreset(Enum):
 
     constant_acceleration_and_static_box_size_2d = {'order_pos': 2, 'dim_pos': 2,
                                                     'order_size': 0, 'dim_size': 2}
+    constant_velocity_and_1dchange_box_size_2d = {'order_pos': 1, 'dim_pos': 2,
+                                                    'order_size': 1, 'dim_size': 2}
+    constant_velocity_and_2dchange_box_size_2d = {'order_pos': 1, 'dim_pos': 2,
+                                                    'order_size': 2, 'dim_size': 2}
+    
 
 
 def _base_dim_block(dt: float, order: int = 1):
